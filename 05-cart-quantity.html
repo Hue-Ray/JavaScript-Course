@@ -20,6 +20,29 @@
     console.log(`cart Quantity: ${cartQuantity}`);
   ">+3</button>
   <button onclick="
+    cartQuantity += 4;
+    console.log(`cart Quantity: ${cartQuantity}`);
+  ">
+    +4
+  </button>
+  <button onclick="
+    cartQuantity += 5;
+    console.log(`cart Quantity: ${cartQuantity}`);
+
+  ">+5</button>
+  <button onclick="
+    cartQuantity --;
+    console.log(`cart Quantity: ${cartQuantity}`);
+  ">Remove from Cart</button>
+  <button onclick="
+    cartQuantity -= 2;
+    console.log(`cart Quantity: ${cartQuantity}`);
+  ">-2</button>
+  <button onclick="
+    cartQuantity -= 3;
+    console.log(`cart Quantity: ${cartQuantity}`);
+  ">-3</button>
+  <button onclick="
     cartQuantity = 0;
     console.log('cart was reset');
     console.log(`cart Quantity: ${cartQuantity}`);
@@ -29,6 +52,24 @@
   <script>
    let cartQuantity = 0;
 
+
+
+   //Assignment 1
+   let name = "Adepoju Oluwatobi";
+    console.log(`My name is ${name}`);
+
+    //assignment 2
+    let coffee = 5;
+    let bagels = 3 * 2;
+    let soup = 9;
+
+    let cost = coffee + bagels + soup;
+    console.log(`$${cost}`);
+
+    let tax = 10/100;
+    let costWithTax = cost * tax;
+    console.log( `The total cost with tax is: $${costWithTax}`);
+    console.log(`Tax (10%): $${tax}`);
   </script>
 </body>
 </html>
