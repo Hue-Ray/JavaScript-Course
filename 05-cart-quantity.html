@@ -8,12 +8,20 @@
     console.log(`cart Quantity: ${cartQuantity}`);
     ">Show Quantity</button>
   <button onclick="
-    cartQuantity ++;
+    if (cartQuantity + 1 > 10){
+      alert('Cart is full')
+    } else {
+      cartQuantity ++;
     console.log(`cart Quantity: ${cartQuantity}`);
+    }
   ">Add to Cart</button>
   <button onclick="
-    cartQuantity += 2;
+    if (cartQuantity + 2 >10){
+      alert('please remove some items')
+    } else {
+      cartQuantity += 2;
     console.log(`cart Quantity: ${cartQuantity}`);
+    }
   ">+2</button>
   <button onclick="
     cartQuantity += 3;
@@ -31,16 +39,28 @@
 
   ">+5</button>
   <button onclick="
-    cartQuantity --;
+    if (cartQuantity -1 < 0){
+      alert('Not enough items in cart')
+    } else{
+      cartQuantity --;
     console.log(`cart Quantity: ${cartQuantity}`);
+    }
   ">Remove from Cart</button>
   <button onclick="
-    cartQuantity -= 2;
+    if (cartQuantity -2 < 0){
+      alert('Mot enough items in cart')
+    } else {
+      cartQuantity -= 2;
     console.log(`cart Quantity: ${cartQuantity}`);
+    }
   ">-2</button>
   <button onclick="
-    cartQuantity -= 3;
+    if (cartQuantity -3 < 0){
+      alert('Not enough items in cart')
+    } else {
+      cartQuantity -= 3;
     console.log(`cart Quantity: ${cartQuantity}`);
+    }
   ">-3</button>
   <button onclick="
     cartQuantity = 0;
@@ -50,9 +70,7 @@
 
 
   <script>
-   let cartQuantity = 0;
-
-
+    let cartQuantity = 0;
 
    //Assignment 1
    let name = "Adepoju Oluwatobi";
